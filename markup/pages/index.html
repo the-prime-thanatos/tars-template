@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head }}
+    </head>
+
+    <body class="body">
+        %=symbols=%
+
+        <div class="document">
+            <div class="document__content">
+                <!-- begin::header -->
+                {{> header/header }}
+                <!-- end::header -->
+
+                <section class="section">
+                    <div class="container">
+                        <h1>Список страниц:</h1>
+                        <h5>Базовые страницы</h5>
+                        <ul>
+                            <li><a href="/type.html">Типовая страница с текстовой информацией</a></li>
+                            <li><a href="/inputs.html">Станица элементов форм</a></li>
+                            <li><a href="/icons.htl">Страница с иконками</a></li>
+                        </ul>
+                        <h5>Страницы макета</h5>
+                        <p>Страницы, которые отрисованы в макете</p>
+                        <ul>
+                            <li><a href="/front-page.html">Главная</a></li>
+                        </ul>
+                        <h5>Дополнительные страницы</h5>
+                        <ul>
+                            <li><a href="/thanks.html">Спасибо за заявку!</a></li>
+                        </ul>
+                        <h5>Страницы закрытые от неавторизованых пользователей</h5>
+                        <ul>
+                            <li><a href="/">Пока пусто(</a></li>
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+            <div class="document__footer">
+                <!-- begin::footer -->
+                {{> footer/footer }}
+                <!-- end::footer -->
+            </div>
+        </div>
+        <!-- begin::modal -->
+        {{> modal/modal }}
+        <!-- end::modal -->
+
+        {{> assets/script }}
+        {{> assets/preloader }}
+    </body>
+
+</html>

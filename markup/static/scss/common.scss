@@ -1,0 +1,44 @@
+// Common styles of the project
+
+/* document style */ 
+html,body,*:after,*:before,*{
+    font-family: 'Noto Sans', sans-serif;
+}
+html,body{
+    font-size: 16px;
+}
+
+.document{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    &__content{
+        flex: auto;
+    }
+    &__footer{
+        flex-shrink: 0;
+    }
+}
+.section{
+    padding-top: 60px;
+    padding-bottom: 75px;
+}
+
+.html{
+    h1,h2,h3,h4,h5,h6{
+        font-weight: 700;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    p{
+        font-size: 1rem;
+    }
+    table{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
